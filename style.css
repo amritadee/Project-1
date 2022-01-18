@@ -1,0 +1,381 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;  
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Space Mono', monospace;
+    font-family: 'Syne', sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to bottom, #041038, #738BDA);
+    width:100%;
+    height: 100%;
+}
+
+text{
+    fill: white;
+    font-size: 37px;
+}
+
+.textcircle{
+    fill: white;
+    font-size: 100px;
+}
+
+h1{
+    color: white;
+    font-size: 55px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h2{
+    color: white;
+    font-size: 70px;
+    text-align: center;
+    transform: skewX(-10deg) skewY(-10deg);
+    margin-bottom: 30px;
+}
+
+h3{
+    color: white;
+    font-size: 55px;
+    text-align: center;
+    margin-bottom: 200px;
+    margin-top: 30px;
+}
+
+h4{
+    color: white;
+    font-size: 100px;
+    text-align: center;
+    transform: skewX(-10deg) skewY(-10deg);
+}
+
+p{
+color: white;
+size: 40px;
+}
+
+.content{
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 200px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+
+.extrapadding{
+    padding-top: 780px;
+    padding-bottom: 100px;
+}
+
+.extrapaddingbottom{
+    padding-bottom: 400px;
+
+}
+
+.gap{
+    background-color: transparent;
+    width: 800px;
+    height: 600px;
+    margin: 20px;
+    min-width: 0px;
+    min-height: 0px;
+    overflow: hidden;
+    align-items: center;
+    
+}
+
+.container{
+    background-color: transparent;
+    width: 800px;
+    height: 600px;
+    margin: 20px;
+    min-width: 0px;
+    min-height: 0px;
+    overflow: hidden;
+    align-items: center;
+
+}
+
+
+.containerleft{
+    background-color: transparent;
+    width: 800px;
+    height: 200px;
+    min-width: 0px;
+    min-height: 0px;
+    margin-top: 100px;
+    overflow: visible;
+    display: relative;
+
+}
+
+.containeright{
+    background-color: transparent;
+    width: 800px;
+    height: 300px;
+    min-width: 0px;
+    min-height: 0px;
+    margin-bottom: 600px;
+    overflow: hidden;
+    display: relative;
+}
+
+@keyframes flying {
+    0%{
+        top: 0px;
+
+    }
+
+    50%{
+        top: 100vh;
+
+    }
+
+   100%{
+       top: 0px;
+   }
+}
+
+@keyframes flyingrectangle{
+    0%{
+        top: 0px;
+
+    }
+
+    50%{
+        top: 100vh;
+
+    }
+
+   100%{
+       top: 0px;
+   }
+}
+
+.rectangle1{
+    width: 15px;
+    height: 120px;
+    right: 30%;
+    background-color: rgb(1, 12, 49);
+    margin-top: 180px;
+    transform: rotate(20deg);
+    position: fixed;
+    -webkit-animation: flyingrectangle 15s infinite;
+    animation: flyingrectangle 15s infinite slidein;
+    animation-direction: normal;
+    animation-delay: 2s;
+} 
+
+.rectangle2{
+    width: 10px;
+    height: 170px;
+    right: 20%;
+    margin-top: 100px;
+    background-color: rgb(1, 12, 49);
+    transform: rotate(20deg);
+    position: fixed;
+    -webkit-animation: flyingrectangle 15s linear infinite;
+    animation: flyingrectangle 15s linear infinite slidein;
+    animation-delay: 2s;
+} 
+
+.rectangle3{
+    width: 5px;
+    height: 140px;
+    right: 10%;
+    margin-top: 100px;
+    background-color: rgb(1, 12, 49);
+    transform: rotate(20deg);
+    position: fixed;
+    -webkit-animation: flyingrectangle 12s linear infinite;
+    animation: flyingrectangle 12s linear infinite slidein;
+    animation-delay: 2s;
+} 
+
+.rectangle4{
+    width: 7px;
+    height: 100px;
+    right: 37%;
+    margin-top: 100px;
+    background-color: rgb(1, 12, 49);
+    transform: rotate(20deg);
+    position: fixed;
+    -webkit-animation: flyingrectangle 12s linear infinite;
+    animation: flyingrectangle 12s linear infinite slidein;
+    animation-delay: 2s;
+} 
+
+.rectangle5{
+    width: 5px;
+    height: 60px;
+    right: 46%;
+    margin-top: 100px;
+    background-color: rgb(1, 12, 49);
+    transform: rotate(20deg);
+    position: fixed;
+    -webkit-animation: flyingrectangle 10s linear infinite;
+    animation: flyingrectangle 10s linear infinite slidein;
+    animation-delay: 2s;
+} 
+
+.rectangle6{
+    width: 7px;
+    height: 100px;
+    right: 13%;
+    margin-top: 120px;
+    background-color: rgb(1, 12, 49);
+    transform: rotate(20deg);
+    position: fixed;
+    -webkit-animation: flyingrectangle 15s linear infinite;
+    animation: flyingrectangle 15s linear infinite slidein;
+    animation-delay: 2s;
+} 
+
+.rectangle7{
+    width: 15px;
+    height: 90px;
+    right: 55%;
+    background-color: rgb(1, 12, 49);
+    transform: rotate(20deg);
+    position: fixed;
+    -webkit-animation: flyingrectangle 15s infinite;
+    animation: flyingrectangle 15s infinite slidein;
+    animation-direction: normal;
+    animation-delay: 2s;
+} 
+
+.rectangle8{
+    width: 7px;
+    height: 140px;
+    right: 65%;
+    margin-top: 10px;
+    background-color: rgb(1, 12, 49);
+    transform: rotate(20deg);
+    position: fixed;
+    -webkit-animation: flyingrectangle 15s linear infinite;
+    animation: flyingrectangle 15s linear infinite slidein;
+    animation-delay: 2s;
+} 
+
+
+.rectangle9{
+    width: 5px;
+    height: 60px;
+    right: 70%;
+    margin-top: 140px;
+    background-color: rgb(1, 12, 49);
+    transform: rotate(20deg);
+    position: fixed;
+    -webkit-animation: flyingrectangle 10s linear infinite;
+    animation: flyingrectangle 10s linear infinite slidein;
+    animation-delay: 2s;
+} 
+
+.rectangle10{
+    width: 7px;
+    height: 100px;
+    right: 75%;
+    margin-top: 120px;
+    background-color: rgb(1, 12, 49);
+    transform: rotate(20deg);
+    position: fixed;
+    -webkit-animation: flyingrectangle 15s linear infinite;
+    animation: flyingrectangle 15s linear infinite slidein;
+    animation-delay: 2s;
+} 
+
+.rectangle11{
+    width: 15px;
+    height: 110px;
+    right: 80%;
+    background-color: rgb(1, 12, 49);
+    margin-top: 160px;
+    transform: rotate(20deg);
+    position: fixed;
+    -webkit-animation: flyingrectangle 16s infinite;
+    animation: flyingrectangle 16s infinite slidein;
+    animation-direction: normal;
+    animation-delay: 2s;
+} 
+
+.rectangle12{
+    width: 10px;
+    height: 100px;
+    right: 85%;
+    margin-top: 30px;
+    background-color: rgb(1, 12, 49);
+    transform: rotate(20deg);
+    position: fixed;
+    -webkit-animation: flyingrectangle 12s linear infinite;
+    animation: flyingrectangle 12s linear infinite slidein;
+    animation-delay: 2s;
+} 
+
+.rectangle13{
+    width: 5px;
+    height: 60px;
+    right: 95%;
+    margin-top: 100px;
+    background-color: rgb(1, 12, 49);
+    transform: rotate(20deg);
+    position: fixed;
+    -webkit-animation: flyingrectangle 10s linear infinite;
+    animation: flyingrectangle 10s linear infinite slidein;
+    animation-delay: 2s;
+} 
+
+
+.rectangle14{
+    width: 5px;
+    height: 60px;
+    right: 5%;
+    margin-top: 30px;
+    background-color: rgb(1, 12, 49);
+    transform: rotate(20deg);
+    position: fixed;
+    -webkit-animation: flyingrectangle 12s linear infinite;
+    animation: flyingrectangle 12s linear infinite slidein;
+    animation-delay: 2s;
+} 
+
+
+.boat{
+    position: fixed;
+    width: 150px;
+    height: 150px;
+    bottom: 5%;
+    left: 10%;
+    transform: vertical;
+    transform-origin: center;
+    -webkit-animation: flying 25s linear infinite;
+    animation: flying 30s linear infinite slidein;
+
+}
+
+.boat img{
+    width: 100%;
+    height: 100%;
+
+}
+
+.circlescontainer{
+    display:relative;
+    height: 400px;
+
+}
+
+
